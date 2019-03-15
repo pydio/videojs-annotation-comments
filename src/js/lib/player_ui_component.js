@@ -7,7 +7,8 @@
 const PlayerComponent = require("./player_component"),
       Handlebars = require('handlebars/runtime'),
       Templates = require('./../compiled/templates'),
-      Utils = require('./../lib/utils');
+      Utils = require('./../lib/utils'),
+      $ = require('jquery');
 
 module.exports = class PlayerUIComponent extends PlayerComponent {
 

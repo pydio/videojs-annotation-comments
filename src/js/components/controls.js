@@ -10,6 +10,7 @@ const   PlayerUIComponent = require("./../lib/player_ui_component"),
         SelectableShape = require("./selectable_shape.js"),
         PlayerButton = require("./player_button"),
         Annotation = require("./annotation"),
+        $ = require('jquery'),
         templateName = 'controls';
 
 // Control uses a "ui state" to determine how UI is rendered - this object is the base state, containing a

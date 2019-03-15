@@ -7,6 +7,7 @@ const   PlayerUIComponent = require("./../lib/player_ui_component"),
         Utils = require("./../lib/utils"),
         Comment = require("./comment"),
         commentListTemplateName = 'comment_list',
+        $ = require('jquery'),
         newCommentTemplateName = 'new_comment';
 
 module.exports = class CommentList extends PlayerUIComponent {

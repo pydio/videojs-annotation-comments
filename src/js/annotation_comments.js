@@ -11,6 +11,7 @@ module.exports = (videojs) => {
           Utils = require('./lib/utils'),
           Controls = require("./components/controls"),
           AnnotationState = require("./components/annotation_state"),
+          $ = require('jquery'),
           EventDispatcher = require("./lib/event_dispatcher");
 
     const DEFAULT_OPTIONS = Object.freeze({

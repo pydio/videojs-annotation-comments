@@ -6,6 +6,7 @@
 const   PlayerUIComponent = require("./../lib/player_ui_component"),
         Utils = require("./../lib/utils"),
         markerTemplateName = 'marker',
+        $ = require('jquery'),
         markerWrapTemplateName = 'marker_wrap';
 
 module.exports = class Marker extends PlayerUIComponent {

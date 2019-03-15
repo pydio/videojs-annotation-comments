@@ -4,6 +4,8 @@
 */
 
 const PlayerUIComponent = require("./../lib/player_ui_component");
+const $ = require('jquery');
+
 
 module.exports = class Shape extends PlayerUIComponent {
 

@@ -8,6 +8,7 @@ const   PlayerUIComponent = require("./../lib/player_ui_component"),
         CommentList = require("./comment_list"),
         Marker = require("./marker"),
         Comment = require("./comment"),
+        $ = require('jquery'),
         Shape = require("./shape");
 
 module.exports = class Annotation extends PlayerUIComponent {

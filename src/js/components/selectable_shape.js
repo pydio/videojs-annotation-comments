@@ -4,6 +4,7 @@
 */
 
 const   Shape = require("./shape"),
+        $ = require('jquery'),
         Utils = require('./../lib/utils');
 
 module.exports = class SelectableShape extends Shape {

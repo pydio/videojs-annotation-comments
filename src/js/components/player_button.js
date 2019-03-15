@@ -4,6 +4,7 @@
 */
 
 const PlayerUIComponent = require("./../lib/player_ui_component"),
+      $ = require('jquery'),
       templateName = "player_button";
 
 module.exports = class PlayerButton extends PlayerUIComponent {

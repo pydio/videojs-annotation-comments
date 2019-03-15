@@ -6,6 +6,7 @@
 
 const   Marker = require("./marker"),
         Utils = require('./../lib/utils'),
+        $ = require('jquery'),
         markerTemplateName = 'draggable_marker';
 
 module.exports = class DraggableMarker extends Marker {
