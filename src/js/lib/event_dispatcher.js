@@ -26,6 +26,9 @@ const EventRegistry = {
         newAnnotation: (event, _this) => {
             _this.createAndAddAnnotation(event.detail);
         },
+        resizeAnnotation: (event, _this) => {
+            _this.resizeAnnotationShape(event.detail);
+        },
         destroyAnnotation: (event, _this) => {
             _this.destroyAnnotationById(event.detail.id);
         },

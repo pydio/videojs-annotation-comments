@@ -76,13 +76,18 @@ module.exports = class PlayerUIComponent extends PlayerComponent {
 
     // Handle escaped breaklines in Handlebars
     registerHandlebarsHelpers () {
-        if('breaklines' in Handlebars.helpers) return;
-
-        Handlebars.registerHelper('breaklines', (text) => {
-            text = Handlebars.Utils.escapeExpression(text);
-            text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
-            return new Handlebars.SafeString(text);
+        if(!('breaklines' in Handlebars.helpers)) {
+            Handlebars.registerHelper('breaklines', (text) => {
+                text = Handlebars.Utils.escapeExpression(text);
+                text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+                return new Handlebars.SafeString(text);
+            });
+        }
+        Handlebars.registerHelper('I18n', (str) => {
+            return (this.plugin.options.t ? this.plugin.options.t(str) : str);
         });
+        if(!('I18n' in Handlebars.helpers)) {
+        }
     }
 
     // Provide basic teardown function to inherit

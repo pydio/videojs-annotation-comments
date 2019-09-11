@@ -89,6 +89,12 @@ module.exports = class AnnotationState extends PlayerComponent {
         this.addNewAnnotation(annotation)
     }
 
+    // Resize an annotation shape
+    resizeAnnotationShape (data) {
+        let annotation = this.findAnnotation(data.id);
+        if (annotation) annotation.resizeShape(data);
+    }
+
     // Destroy an existing annotation
     destroyAnnotationById (id) {
         let annotation = this.findAnnotation(id);

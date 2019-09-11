@@ -169,7 +169,8 @@ module.exports = class CommentList extends PlayerUIComponent {
 
     // Delete the annotation
     handleDeleteAnnotationClick (e) {
-        let $confirmEl = $("<a/>").addClass("vac-delete-confirm").text("CONFIRM");
+        const confText = (this.plugin.options.t ? this.plugin.options.t('comment.delete.confirm') : 'CONFIRM');
+        let $confirmEl = $("<a/>").addClass("vac-delete-confirm").text(confText);
         $confirmEl.on("click.comment", () => {
             $confirmEl.off("click.comment");
             this.annotation.teardown();

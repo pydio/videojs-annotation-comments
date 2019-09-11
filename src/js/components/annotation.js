@@ -27,6 +27,13 @@ module.exports = class Annotation extends PlayerUIComponent {
         this.isOpen = false;
     }
 
+    resizeShape(data){
+        this.shape = data.shape;
+        if(this.annotationShape){
+            this.annotationShape.resize(data.shape);
+        }
+    }
+
     buildComments(data) {
         this.commentList = new CommentList(
             {"comments": data.comments, "annotation": this},

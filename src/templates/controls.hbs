@@ -1,11 +1,11 @@
 {{#unless adding}}
     {{#if showControls}}
         <div class="vac-controls vac-control">
-            <button class="vac-button">+ NEW</button>
+            <button class="vac-button">{{I18n "controls.new"}}</button>
             {{#if showNav}}
                 <div class="vac-annotation-nav">
-                    <div class="vac-a-prev">Prev</div>
-                    <div class="vac-a-next">Next</div>
+                    <div class="vac-a-prev">{{I18n "controls.prev"}}</div>
+                    <div class="vac-a-next">{{I18n "controls.next"}}</div>
                 </div>
             {{/if}}
         </div>
@@ -15,14 +15,14 @@
 {{#if adding}}
     <div class="vac-video-cover vac-control">
         <div class="vac-video-cover-canvas">
-            <div class="vac-cursor-tool-tip vac-hidden">Click and drag to select</div>
+            <div class="vac-cursor-tool-tip vac-hidden">{{I18n "controls.dragtoselect"}}</div>
         </div>
     </div>
     {{#if showControls}}
         <div class="vac-add-controls vac-control">
-            <i>Select shape + range</i>
+            <i>{{I18n "controls.selectshaperange"}}</i>
             {{#if internalCommenting}}
-                <button class="vac-button">CONTINUE</button>
+                <button class="vac-button">{{I18n "controls.continue"}}</button>
                 <a>cancel</a>
             {{/if}}
             <div class="vac-video-move">
@@ -36,12 +36,12 @@
         <div class="vac-video-write-new-wrap vac-control">
             <div class="vac-video-write-new vac-is-annotation">
                 <div>
-                    <h5><b>New Annotation</b> @ {{rangeStr}}</h5>
+                    <h5><b>{{I18n "comment.new"}}</b> @ {{rangeStr}}</h5>
                     <div class="vac-comment-showbox">
-                        <textarea placeholder="Enter comment..."></textarea>
+                        <textarea placeholder="{{I18n "comment.placeholder"}}"></textarea>
                         <div>
-                            <button class="vac-button">SAVE</button>
-                            <a>Cancel</a>
+                            <button class="vac-button">{{I18n "comment.save"}}</button>
+                            <a>{{I18n "comment.cancel"}}</a>
                         </div>
                     </div>
                 </div>
